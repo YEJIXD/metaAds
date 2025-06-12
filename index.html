@@ -1,11 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Test Page</title>
+    <title>Facebook Test Page</title>
+    <!-- Facebook Pixel 코드 -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'YOUR_PIXEL_ID'); // 실제 Pixel ID로 교체
+        fbq('track', 'PageView');
+    </script>
 </head>
 <body>
-    <h1>Facebook App Test Page</h1>
-    <p>This is a test page for Facebook app configuration.</p>
+    <h1>Meta Ads Test Page</h1>
+    <p>This page is for Facebook app configuration testing.</p>
 </body>
 </html>
